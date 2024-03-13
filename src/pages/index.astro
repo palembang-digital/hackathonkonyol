@@ -9,7 +9,7 @@ import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
-const { generator, site } = Astro;
+const { site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
   "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
@@ -20,10 +20,13 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="generator" content={generator} />
+    <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😹</text></svg>"
+    />
 
-    <title>Astro Landing Page</title>
+    <title>Hackathon Konyol</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
@@ -63,12 +66,12 @@ const description =
   >
     <Header />
     <Splash />
-    <div class="space-y-24 px-8 py-32">
+    <!-- <div class="space-y-24 px-8 py-32">
       <Intro />
       <Features />
       <Compatibility />
       <Showcase />
-    </div>
-    <Footer />
+    </div> -->
+    <!-- <Footer /> -->
   </body>
 </html>

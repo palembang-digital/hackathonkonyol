@@ -1,0 +1,146 @@
+---
+import { Image } from "astro:assets";
+import ContentSection from "~/components/content-section.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
+---
+
+<ContentSection title="" id="intro">
+  <Fragment slot="lead">
+    Kamu lelah dengan tugas kuliah yang gak habis-habis?
+    <br /><br />
+    Kamu jenuh dengan kerjaan yang itu-itu aja?
+    <br /><br />
+    Kamu bosan disuruh <span class="text-primary">menyala-nyala</span>, <span
+      class="text-primary">ilmu padi</span
+    >, abangku, kakakku? 🔥🌾
+  </Fragment>
+</ContentSection>
+
+<ContentSection title="Mending ikut Hackathon Konyol!" id="mending">
+  <Fragment slot="lead">
+    Yuk gabung bareng kaum mendang-mending lainnya untuk membuat
+    <span class="text-primary">project-project keren</span> yang gak ada faedahnya
+    wkwkwk
+    <br /><br />
+    Di Hackathon Konyol, kamu bebas membuat apa saja yang kamu mau. Yang selama ini
+    menurut kamu gak mungkin, bisa jadi mungkin!
+  </Fragment>
+</ContentSection>
+
+<ContentSection title="Contoh Karya Hackathon Konyol" id="contoh">
+  <Fragment slot="lead">
+    <span class="text-lg">
+      Nih kami kasih beberapa contoh hasil Hackathon Konyol:
+    </span>
+    <br /><br />
+
+    <span class="text-secondary">1. Eyeball Pong</span>
+    <br />
+    <span class="text-base">Main pingpong, tapi gak ngeliat layar.</span>
+    <br /><br />
+    <Image
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src="https://raw.githubusercontent.com/bdon/eyeball_pong/master/preview.gif"
+      width={480}
+      height={360}
+      sizes={sizes}
+      alt="Eyeball Pong"
+    />
+    <br /><br />
+
+    <span class="text-secondary">2. Stupid Font</span>
+    <br />
+    <span class="text-base">Font paling mahal di dunia, katanya.</span>
+    <br /><br />
+    <Image
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src="http://lav.io/wp-content/uploads/2014/11/stupidFont_11.png"
+      width={480}
+      height={360}
+      sizes={sizes}
+      alt="Stupid Font"
+    />
+    <br /><br />
+
+    <span class="text-secondary">3. iPad On A Face</span>
+    <br />
+    <span class="text-base"
+      >A telepresence robot, except it's a human with an iPad on his or her
+      face.</span
+    >
+    <br /><br />
+    <Image
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src="http://lav.io/wp-content/uploads/2014/11/face.jpg"
+      width={480}
+      height={360}
+      sizes={sizes}
+      alt="Stupid Font"
+    />
+    <br /><br />
+
+    <span class="text-base">
+      Dan lain-lain, bisa klean cek di <a
+        href="https://stupidhackathon.com/"
+        target="_blank">stupidhackathon.com</a
+      >, <a
+        href="https://gist.github.com/cheeaun/c3fe6cbb11aef1e146a3474dccf63b87"
+        target="_blank">di sini</a
+      >, atau <a
+        href="https://engineers.sg/organization/supersillyhackathon"
+        target="_blank">di sini</a
+      >.
+    </span>
+  </Fragment>
+</ContentSection>
+
+<ContentSection title="Agenda" id="agenda">
+  <Fragment slot="lead">
+    <span class="text-lg">
+      <span class="text-offset">08:45</span>&nbsp;&nbsp;&nbsp;Registrasi &
+      santai-santai<br />
+      <span class="text-offset">09:00</span>&nbsp;&nbsp;&nbsp;Pembukaan &
+      pesan-pesan dari sponsor<br />
+      <span class="text-offset">09:30</span>&nbsp;&nbsp;&nbsp;Mulai hacking!<br
+      />
+      <span class="text-offset">12:00</span>&nbsp;&nbsp;&nbsp;Makan siang<br />
+      <span class="text-offset">13:00</span>&nbsp;&nbsp;&nbsp;Lanjut hacking!<br
+      />
+      <span class="text-offset">16:00</span>&nbsp;&nbsp;&nbsp;Makan ringan &
+      santai-santai<br />
+      <span class="text-offset">17:00</span>&nbsp;&nbsp;&nbsp;Presentasi<br />
+      <span class="text-offset">18:30</span>&nbsp;&nbsp;&nbsp;Bagi-bagi hadiah!<br
+      />
+      <span class="text-offset">18:45</span>&nbsp;&nbsp;&nbsp;Penutupan &
+      foto-foto<br />
+    </span>
+  </Fragment>
+</ContentSection>
+
+<ContentSection title="Kapan? Dimana?" id="detail">
+  <Fragment slot="lead">
+    <span class="text-primary">Sabtu, 20 April 2024</span><br /><br />
+    <span class="text-primary">Kampus PalComTech</span><br />
+    <span class="text-lg"
+      ><a href="https://maps.app.goo.gl/AKRhZVcCEQAtnhod9"
+        >Jl. Jend. Basuki Rachmat No.5, 20 Ilir D II, Kec. Ilir Tim. I, Kota
+        Palembang, Sumatera Selatan 30151</a
+      ></span
+    >
+  </Fragment>
+</ContentSection>
+
+<ContentSection title="Okay! Sold! Aku mau ikut!" id="daftar">
+  <Fragment slot="lead">
+    <span class="text-primary"
+      >Mantap! Pendaftarannya masih coming soon yakk.<br />Nanti kami share
+      linknya ASAP!</span
+    ><br /><br />
+    Untuk sementara, klean bisa follow IG <a
+      href="https://www.instagram.com/palembang_digital/"
+      target="_blank">Palembang Digital</a
+    > dulu!
+  </Fragment>
+</ContentSection>

@@ -1,5 +1,4 @@
 ---
-import { Icon } from "astro-icon/components";
 import ContentSection from "~/components/content-section.astro";
 import type { FeatureItem } from "~/types";
 
@@ -43,14 +42,16 @@ const features: Array<FeatureItem> = [
 ];
 ---
 
-<ContentSection title="Features" id="features">
+<ContentSection title="Mending ikut Hackathon Konyol!" id="features">
   <Fragment slot="lead">
-    Astro comes <span class="text-primary">batteries included</span>. It takes
-    the best parts of
-    <span class="text-primary">state-of-the-art</span>
-    tools and adds its own <span class="text-primary">innovations</span>.
+    Yuk gabung rame-rame sama kaum mendang-mending lainnya untuk membuat
+    <span class="text-primary">project-project keren</span> yang gak ada faedahnya
+    wkwkwk
+    <br /><br />
+    Di Hackathon Konyol, kamu bebas membuat apa saja yang kamu mau. Yang selama ini
+    menurut kamu gak mungkin, bisa jadi mungkin!
   </Fragment>
-  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <!-- <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
       features.map(({ title, description, icon }) => (
         <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
@@ -62,5 +63,5 @@ const features: Array<FeatureItem> = [
         </li>
       ))
     }
-  </ul>
+  </ul> -->
 </ContentSection>

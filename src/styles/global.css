@@ -8,5 +8,5 @@ a,
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
-  @apply bg-gradient-to-br from-yellow-700 via-yellow-200 to-orange-700;
+  @apply bg-gradient-to-br from-yellow-700 via-yellow-300 to-orange-700;
 }

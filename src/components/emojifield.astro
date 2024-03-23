@@ -5,7 +5,7 @@
 <script>
   import invariant from "tiny-invariant";
 
-  const EMOJI_LIST = ["🙀", "😸", "😹", "😺", "😻", "😼", "😽", "😾", "😿"];
+  const EMOJI_LIST = ["🙀", "😹", "😻", "💩", "❤️", "🔥", "🌾"];
 
   const COUNT = 25;
   const SPEED = 0.1;
@@ -16,6 +16,7 @@
     z: number;
     xPrev: number;
     yPrev: number;
+    emoji: string;
 
     constructor(x = 0, y = 0, z = 0, emoji = "🙀") {
       this.x = x;
@@ -62,13 +63,13 @@
         0,
         0,
         0,
-        EMOJI_LIST[Math.floor(Math.random() * EMOJI_LIST.length)],
-      ),
+        EMOJI_LIST[Math.floor(Math.random() * EMOJI_LIST.length)]
+      )
   );
   let rafId = 0;
 
   const canvas = document.querySelector(
-    "#emojifield-canvas",
+    "#emojifield-canvas"
   ) as HTMLCanvasElement;
   invariant(canvas, "canvas should not be null");
   const ctx = canvas.getContext("2d");

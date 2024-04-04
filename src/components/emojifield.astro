@@ -5,10 +5,10 @@
 <script>
   import invariant from "tiny-invariant";
 
-  const EMOJI_LIST = ["🙀", "😹", "😻", "💩", "❤️", "🔥", "🌾"];
+  const EMOJI_LIST = ["🙀", "😹", "😻", "❤️", "🔥", "🌾", "🥳", "🎉"];
 
   const COUNT = 25;
-  const SPEED = 0.1;
+  const SPEED = 0.15;
 
   class Star {
     x: number;
@@ -30,9 +30,9 @@
     update(width: number, height: number, speed: number) {
       this.xPrev = this.x;
       this.yPrev = this.y;
-      this.z += speed * 0.0675;
-      this.x += this.x * (speed * 0.0225) * this.z;
-      this.y += this.y * (speed * 0.0225) * this.z;
+      this.z += speed * 0.1;
+      this.x += this.x * (speed * 0.05) * this.z;
+      this.y += this.y * (speed * 0.05) * this.z;
       if (
         this.x > width / 2 ||
         this.x < -width / 2 ||
@@ -100,7 +100,7 @@
     ctx.translate(width / 2, height / 2);
     ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
     ctx.strokeStyle = "white";
-    ctx.font = "72px serif";
+    ctx.font = "36px serif";
     rafId = requestAnimationFrame(frame);
   }
 

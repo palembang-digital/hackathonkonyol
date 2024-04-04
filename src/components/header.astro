@@ -4,25 +4,24 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Hackathon Konyol 🔥", url: "#" },
+  { title: "Hackathon Konyol 🔥", url: "#intro" },
   { title: "Buat kaum mendang-mending 😻", url: "#mending" },
   // { title: "Agenda acara ⏰", url: "#agenda" },
   { title: "Kapan? Dimana? 🗺️", url: "#detail" },
+  { title: "DAFTAR 🥳", url: "#daftar" },
 ];
 ---
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="absolute bottom-0 z-20 flex w-full items-center justify-center border-b border-transparent px-8 py-4 text-white"
 >
-  <a
-    class="flex items-center gap-3 hover:!text-default"
+  <!-- <a
     href="https://www.instagram.com/palembang_digital/"
   >
-    <h1>@palembang_digital</h1>
-    <!-- <Icon name="logomark" class="size-10" />
-    <Icon name="wordmark" class="hidden h-4 sm:block" /> -->
-  </a>
+    @palembang_digital
+  </a> -->
+
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
@@ -85,7 +84,7 @@ const navItems: Array<NavItem> = [
 
 <script>
   import MicroModal from "micromodal";
-  import invariant from "tiny-invariant";
+import invariant from "tiny-invariant";
 
   const menuModalId = "menu-modal";
 

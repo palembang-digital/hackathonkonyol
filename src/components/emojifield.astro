@@ -63,13 +63,13 @@
         0,
         0,
         0,
-        EMOJI_LIST[Math.floor(Math.random() * EMOJI_LIST.length)]
-      )
+        EMOJI_LIST[Math.floor(Math.random() * EMOJI_LIST.length)],
+      ),
   );
   let rafId = 0;
 
   const canvas = document.querySelector(
-    "#emojifield-canvas"
+    "#emojifield-canvas",
   ) as HTMLCanvasElement;
   invariant(canvas, "canvas should not be null");
   const ctx = canvas.getContext("2d");

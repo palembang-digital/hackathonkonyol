@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import ContentSection from "~/components/content-section.astro";
+
+const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
+---
+
+<ContentSection title="Contoh Karya Hackathon Konyol" id="contoh">
+  <Fragment slot="lead">
+    <span class="text-lg"> Nih beberapa contoh karya Hackathon Konyol:</span>
+    <br /><br />
+    <span class="text-secondary">1. Eyeball Pong</span>
+    <br />
+    <span class="text-base"
+      >Main pingpong gak pake raket, tapi pake mata 👀</span
+    >
+    <br /><br />
+    <Image
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src="https://raw.githubusercontent.com/bdon/eyeball_pong/master/preview.gif"
+      width={480}
+      height={360}
+      sizes={sizes}
+      alt="Eyeball Pong"
+    />
+    <br /><br />
+
+    <span class="text-secondary">2. Just Do It</span>
+    <br />
+    <span class="text-base"
+      >Shia LaBeouf akan memotivasi kamu tiap kali kamu buka Instagram,
+      Facebook, YouTube, dll</span
+    >
+    <br /><br />
+    <iframe
+      src="https://www.youtube.com/embed/dN_UTTIDckQ?si=tT1UKo-CsGTfsaua"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+    <br /><br />
+
+    <span class="text-secondary">3. Wadah Pisang</span>
+    <br />
+    <span class="text-base">Kurang konyol apalagi coba? Wkwkwk</span>
+    <br /><br />
+    <Image
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src="https://stupidhackathon.github.io/project-images/zippable-banana.jpg"
+      width={480}
+      height={360}
+      sizes={sizes}
+      alt="Stupid Font"
+    />
+    <br /><br />
+
+    <span class="text-sm">
+      Contoh lainnya bisa klean cek di [<a
+        href="https://stupidhackathon.com/"
+        target="_blank">stupidhackathon.com</a
+      >],
+      <br />
+      [<a
+        href="https://gist.github.com/cheeaun/c3fe6cbb11aef1e146a3474dccf63b87"
+        target="_blank">di sini</a
+      >], atau [<a
+        href="https://engineers.sg/organization/supersillyhackathon"
+        target="_blank">di sini</a
+      >].
+    </span>
+    <br />
+
+    <span class="text-sm"
+      >Kalo masih bingung mau buat apa, bisa tanya ChatGPT aja ygy</span
+    >
+  </Fragment>
+</ContentSection>

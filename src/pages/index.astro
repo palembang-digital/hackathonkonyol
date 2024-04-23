@@ -1,14 +1,17 @@
 ---
 import "@fontsource-variable/inter";
-import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+import "~/styles/index.css";
+import Agenda from "~/components/agenda.astro";
+import Organizers from "~/components/organizers.astro";
+import EventDetails from "~/components/event-details.astro";
+import Examples from "~/components/examples.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
-import Content from "~/components/content.astro";
-import "~/styles/index.css";
+import Register from "~/components/register.astro";
+import Sponsors from "~/components/sponsors.astro";
+import CodeOfConduct from "~/components/code-of-conduct.astro";
 
 const { site } = Astro;
 const image = new URL("og.jpg", site);
@@ -75,7 +78,14 @@ const description =
     <Header />
     <Splash />
     <div class="space-y-24 px-8 py-32">
-      <Content />
+      <Intro />
+      <Examples />
+      <Agenda />
+      <EventDetails />
+      <Register />
+      <Sponsors />
+      <CodeOfConduct />
+      <Organizers />
     </div>
     <Footer />
   </body>

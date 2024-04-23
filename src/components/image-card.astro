@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+
+const { content } = Astro.props;
+
+const widths = [450, 800];
+const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
+---
+
+<div class={`flex items-center justify-center`}>
+  <Image
+    class={content.data.width || "w-full"}
+    src={content.data.image}
+    widths={widths}
+    sizes={sizes}
+    alt={`A screenshot of ${content.data.name}`}
+  />
+</div>

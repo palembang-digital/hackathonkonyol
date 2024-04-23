@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import ContentSection from "~/components/content-section.astro";
+import ImageCard from "~/components/image-card.astro";
+
+const featuredOrganizers = await getCollection(
+  "organizers",
+  ({ data }) => "featured" in data,
+);
+const orderedOrganizers = featuredOrganizers.sort(
+  (a, b) => a.data.featured! - b.data.featured!,
+);
+---
+
+<ContentSection title="Organizers" id="organizers">
+  <Fragment slot="lead">
+    <span class="text-base">Hackathon Konyol dipersembahkan oleh:</span>
+  </Fragment>
+  <div class="max-w-6xl space-y-2">
+    <div class="grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-3">
+      {orderedOrganizers.map((organizer) => <ImageCard content={organizer} />)}
+    </div>
+  </div>
+</ContentSection>

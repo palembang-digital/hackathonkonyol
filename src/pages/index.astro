@@ -2,16 +2,17 @@
 import "@fontsource-variable/inter";
 import "~/styles/index.css";
 import Agenda from "~/components/agenda.astro";
-import Organizers from "~/components/organizers.astro";
+import CodeOfConduct from "~/components/code-of-conduct.astro";
 import EventDetails from "~/components/event-details.astro";
 import Examples from "~/components/examples.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Splash from "~/components/splash.astro";
+import Organizers from "~/components/organizers.astro";
 import Register from "~/components/register.astro";
+import Splash from "~/components/splash.astro";
 import Sponsors from "~/components/sponsors.astro";
-import CodeOfConduct from "~/components/code-of-conduct.astro";
+import Logo from "~/components/logo.astro";
 
 const { site } = Astro;
 const image = new URL("og.jpg", site);
@@ -88,5 +89,10 @@ const description =
       <Organizers />
     </div>
     <Footer />
+    <div class="flex items-center justify-center">
+      <div class="w-1/4">
+        <Logo />
+      </div>
+    </div>
   </body>
 </html>

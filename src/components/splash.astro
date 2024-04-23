@@ -1,18 +1,11 @@
 ---
 import Emojifield from "~/components/emojifield.astro";
-
-const widths = [100, 200];
-const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
 <section class="relative h-full bg-black">
   <Emojifield />
-  <!-- <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
-    <HeroImage />
-  </div> -->
   <div class="relative grid h-full place-items-center">
     <h2 class="flex flex-col items-center gap-2 sm:gap-4 sm:self-auto">
-      <!-- <Icon name="logomark" class="size-24 text-white md:size-32" /> -->
       <div
         class="gradient-text pb-4 text-center font-extrabold tracking-tighter text-8xl"
       >
@@ -28,19 +21,6 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
         📍 PalComTech Basuki Rachmat
       </div>
     </h2>
-    <!-- <div
-      id="astronaut"
-      class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:justify-center sm:self-auto"
-    >
-      <Image
-        class="h-1/2 w-1/2 object-cover"
-        src={partyingFace}
-        widths={widths}
-        sizes={sizes}
-        loading="eager"
-        alt="A partying face"
-      />
-    </div> -->
   </div>
 </section>
 

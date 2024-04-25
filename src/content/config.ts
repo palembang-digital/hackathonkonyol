@@ -7,7 +7,7 @@ const organizers = defineCollection({
       featured: z.number().min(1).optional(),
       image: image(),
       name: z.string(),
-      width: z.string().optional(),
+      url: z.string().optional(),
     }),
 });
 
@@ -18,7 +18,7 @@ const sponsors = defineCollection({
       featured: z.number().min(1).optional(),
       image: image(),
       name: z.string(),
-      width: z.string().optional(),
+      url: z.string().optional(),
     }),
 });
 
